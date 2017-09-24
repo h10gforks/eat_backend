@@ -1,6 +1,6 @@
 eat_backend:
     build: .
     container_name: eat_backend
-    command: gunicorn --name eat_backend -b 0.0.0.0:5488 -w 2 wsgi:app
+    command: gunicorn --name eat_backend -b 0.0.0.0:6666 -w 2 wsgi:app
     ports:
-        - "5488:5488"
+        - "6666:6666"
